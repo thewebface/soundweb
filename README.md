@@ -26,3 +26,16 @@ The controls must be copied to the 'serial' window in Soundweb Designer in order
     swclient.on('SET_VALUE', function(data) {
       console.log(data); // {group: 'SW_AMX_LEVEL', id: 1, value: 124}
     });
+
+Events
+------
+
+#### SET_VALUE #
+Returns decoded data
+
+#### RAW_MSG #
+Returns RAW_MSG message body in Buffer object
+
+####rawmsg #
+Returns undecoded message in Buffer object
+
