@@ -1,7 +1,7 @@
 soundweb
 ========
 
-A library to interface with Soundweb devices via the RS232 serial port
+A Node library to interface with Soundweb devices via the RS232 serial port
 
 It currently requires ser2net (or similar) to make the serial port data available via TCP.
 
