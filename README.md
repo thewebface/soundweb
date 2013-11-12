@@ -36,6 +36,14 @@ Returns decoded data
 #### RAW_MSG #
 Returns RAW_MSG message body in Buffer object
 
-####rawmsg #
+#### data #
 Returns undecoded message in Buffer object
 
+#### connect #
+A TCP connection has been established to the remote host
+
+#### disconnect #
+The TCP connection has been closed at the remote end
+
+#### error #
+A TCP error has occurred. Error object is passed from net.Socket
