@@ -17,8 +17,6 @@ For the machine's first serial port, add the following line to ser2net (to liste
 Usage
 -----
 
-The library currently only supports receiving data from a Soundweb device.
-
 The controls must be copied to the 'serial' window in Soundweb Designer in order for their data to be output.
 
     var swclient = soundweb.createClient({host:'localhost', port:2000});
@@ -26,6 +24,17 @@ The controls must be copied to the 'serial' window in Soundweb Designer in order
     swclient.on('SET_VALUE', function(data) {
       console.log(data); // {group: 'SW_AMX_LEVEL', id: 1, value: 124}
     });
+
+	swclient.SET_VALUE('SW_AMX_SOURCE', 6, 2);
+
+Methods
+-------
+
+#### SET_VALUE(group, id, value)
+Sends SET_VALUE command. group is a string, id and value are integers.
+
+#### RAW_MSG(handle, method, value)
+Sends RAW_MSG command.
 
 Events
 ------
