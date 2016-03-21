@@ -1,6 +1,6 @@
 {
   "name": "soundweb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A library to interface with Soundweb devices via the RS232 serial port",
   "author": "Andy Knight",
   "main": "lib/soundweb.js",
